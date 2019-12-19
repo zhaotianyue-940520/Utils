@@ -47,6 +47,31 @@ public class StringUtils {
 		return matches;
 	}
 	/**
+	 * 判断手机号码是否为数值，是否长度为11位，开始位必须是1.
+	 * @param src
+	 * @return b
+	 */
+	public static boolean isNumber(String src){
+		String regex="^\\d+$";
+		Pattern p = Pattern.compile(regex);
+		Matcher m = p.matcher(src);
+		boolean b = m.matches();
+		return b;
+	}
+	/**
+	 * 判断手机号码是否为数值，是否长度为11位，开始位必须是1.
+	 * @param src
+	 * @return b
+	 */
+	public static boolean judgeTelephoneIsOk(String src){
+		String regex="^[1]\\d{10}$";
+		Pattern p = Pattern.compile(regex);
+		Matcher m = p.matcher(src);
+		boolean b = m.matches();
+		return b;
+	}
+
+	/**
 	 * 判断是否是邮箱
 	 * @param str   
 	 * @return 是邮箱返回true  不是邮箱返回false
