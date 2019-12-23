@@ -3,6 +3,7 @@
   <groupId>com.zhaotianyue..cms.utils</groupId>
   <artifactId>zhuzhiguang-cms-utils</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
   <dependencies>
   	<dependency>
   		<groupId>junit</groupId>
@@ -14,5 +15,6 @@
 		<artifactId>commons-codec</artifactId>
 		<version>1.5</version>
 	</dependency>
+	
   </dependencies>
 </project>
